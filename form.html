@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <!-- css link file -->
+    <link rel="stylesheet" href="form.css">
+    <!-- js link file -->
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <div class="divcontainer">
+        <div class="form">
+            <div class="heading">
+                <h2>Form Validation</h2>
+            </div>
+            <form id="inputcontainer">
+                <input type="text" placeholder="Enter Your Name" id="nameinput">
+                <p id="nameerror"></p>
+                <input type="email" placeholder="Enter Your Email" id="mailinput">
+                <p id="mailerror"></p>
+                <input type="text" placeholder="Enter Your Number" id="numberinput">
+                <p id="numbererror"></p>
+                <div class="gender">
+                    <h5>Male</h5><input type="radio" id="male" name="gender">
+                    <h5>Female</h5><input type="radio" id="female" name="gender">
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox"><h5>I agree the Terms & Condition</h5>
+                </div>
+                <textarea placeholder="Enter Your Commands" id="textarea"></textarea><br>
+                <p id="textareaerror"></p>
+                <input type="submit" value="submit" id="submitbtn">
+            </form>
+        </div>
+
+        <div class="result">
+            <h2>Result Dashboard</h2>
+            <div class="nameresult">
+                <h3>NAME</h3>
+                <h6 id="nameresult"></h6>
+            </div>
+            <div class="mailresult">
+                <h3>E-mail</h3>
+                <h6 id="mailresult"></h6>
+            </div>
+            <div class="numberresult">
+                <h3>Mobile Number</h3>
+                <h6 id="numberresult"></h6>
+            </div>
+            <div class="genderresult">
+                <h3>GENDER</h3>
+                <h6 id="genderresult"></h6>
+            </div>
+            <div class="textarearesult">
+                <h3>COMMAND</h3>
+                <h6 id="commandresult"></h6>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+</body>
+</html>
